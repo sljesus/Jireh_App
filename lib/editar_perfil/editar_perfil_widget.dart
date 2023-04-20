@@ -204,7 +204,7 @@ class _EditarPerfilWidgetState extends State<EditarPerfilWidget> {
                         try {
                           showUploadMessage(
                             context,
-                            'Uploading file...',
+                            'Subiendo Archivo...',
                             showLoading: true,
                           );
                           selectedUploadedFiles = selectedMedia
@@ -237,10 +237,10 @@ class _EditarPerfilWidgetState extends State<EditarPerfilWidget> {
                                 selectedUploadedFiles.first;
                             _model.uploadedFileUrl = downloadUrls.first;
                           });
-                          showUploadMessage(context, 'Success!');
+                          showUploadMessage(context, 'Exito!');
                         } else {
                           setState(() {});
-                          showUploadMessage(context, 'Failed to upload data');
+                          showUploadMessage(context, 'Error al subir el archivo');
                           return;
                         }
                       }
